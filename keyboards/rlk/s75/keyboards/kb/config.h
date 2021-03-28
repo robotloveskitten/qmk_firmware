@@ -16,8 +16,8 @@
 #define MATRIX_COLS 16
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { B2, B1, B0, B5, B4, B3 }
-#define MATRIX_COL_PINS { A2, A1, A0, B8, B13, B14, B15, B9, B10, B11, B12, A14, A7, A6, A5, A4 }
+#define MATRIX_ROW_PINS { D2, D6, C0, D7, E0, E1 }
+#define MATRIX_COL_PINS { B6, B5, B4, B3, B2, B1, B0, E7, E6, F0, F1, F2, F3, F4, F5, F6 }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
@@ -46,12 +46,12 @@
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
 
-#define ENCODERS_PAD_A { B7 }
-#define ENCODERS_PAD_B { B6 }
+#define ENCODERS_PAD_A { D0 }
+#define ENCODERS_PAD_B { D1 }
 #define TAP_CODE_DELAY 10
 #define ENCODER_DIRECTION_FLIP
 
-#define RGB_DI_PIN A13
+#define RGB_DI_PIN F7
 
 #ifdef RGB_DI_PIN
 #define RGBLIGHT_ANIMATIONS
