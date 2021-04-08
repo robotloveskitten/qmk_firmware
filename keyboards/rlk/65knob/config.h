@@ -34,7 +34,7 @@
 #define BACKLIGHT_LEVELS 5
 
 /* Set 0 if debouncing isn't needed */
-#define DEBOUNCE 0
+#define DEBOUNCE 5
 
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
@@ -58,5 +58,5 @@
 // #define DISABLE_TERRAZZO_EFFECT_OUTRUN
 // #define DISABLE_TERRAZZO_EFFECT_PAC_DUDE
 // #define DISABLE_TERRAZZO_EFFECT_HEART
-// #define DISABLE_TERRAZZO_EFFECT_WPM_CHART
+#define DISABLE_TERRAZZO_EFFECT_WPM_CHART
 // #define DISABLE_TERRAZZO_EFFECT_DOT
