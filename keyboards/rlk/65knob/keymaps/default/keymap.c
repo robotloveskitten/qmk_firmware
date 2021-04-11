@@ -22,23 +22,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 void encoder_update_user(uint8_t index, bool clockwise) {
 	if(layer_state_is(0)) {
 	    if (index == 0) { /* media volumen control */
-            // terrazzo_scroll_pixel(clockwise);
+            terrazzo_scroll_pixel(clockwise);
 	        if (clockwise) {
 	            tap_code(KC_VOLU);
 	        } else {
 	            tap_code(KC_VOLD);
 	        }
 	    }
-	}
+    }
 }
 
-
-void matrix_init_user(void) {
-}
-
-void matrix_scan_user(void) {
-}
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-	return true;
-}
+// void encoder_update_user(uint8_t index, bool clockwise) {
+//     terrazzo_scroll_pixel(clockwise);
+//     clockwise ? tap_code(KC__VOLUP) : tap_code(KC__VOLDOWN);
+// }

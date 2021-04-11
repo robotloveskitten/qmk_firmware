@@ -131,7 +131,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
             // Any keycode increments counter
             default:
                 terrazzo_scroll_pixel(1);
-                break;
+            break;
         }
     }
     return process_record_user(keycode, record);
