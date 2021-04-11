@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 void encoder_update_user(uint8_t index, bool clockwise) {
 	if(layer_state_is(0)) {
 	    if (index == 0) { /* media volumen control */
-            terrazzo_scroll_pixel(clockwise);
+            // terrazzo_scroll_pixel(clockwise);
 	        if (clockwise) {
 	            tap_code(KC_VOLU);
 	        } else {
