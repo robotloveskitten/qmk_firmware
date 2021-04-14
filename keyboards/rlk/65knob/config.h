@@ -1,7 +1,5 @@
 #pragma once
-
 #include "config_common.h"
-
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x524B
@@ -52,6 +50,8 @@
 
 /* Terrazzo animations */
 
+// #define DISABLE_TERRAZZO_EFFECT_LIGHTNING
+// #define DISABLE_TERRAZZO_EFFECT_AUDREY
 // #define DISABLE_TERRAZZO_EFFECT_CANDLE
 // #define DISABLE_TERRAZZO_EFFECT_STRIPES
 // #define DISABLE_TERRAZZO_EFFECT_DINO

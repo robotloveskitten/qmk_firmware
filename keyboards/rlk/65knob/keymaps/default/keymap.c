@@ -36,3 +36,11 @@ void encoder_update_user(uint8_t index, bool clockwise) {
 //     terrazzo_scroll_pixel(clockwise);
 //     clockwise ? tap_code(KC__VOLUP) : tap_code(KC__VOLDOWN);
 // }
+
+void keyboard_post_init_user(void) {
+  // Customise these values to desired behaviour
+  debug_enable=true;
+  // debug_matrix=true;
+  // debug_keyboard=true;
+  //debug_mouse=true;
+}

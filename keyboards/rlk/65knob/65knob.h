@@ -22,7 +22,7 @@ enum terrazzo_matrix_effects {
 // --------------------------------------
 // -----Begin led effect enum macros-----
 #define TERRAZZO_EFFECT(name, ...) TERRAZZO_EFFECT_##name,
-#include "terrazzo_effects/terrazzo_effects.inc"
+#include "65knobs_effects/65knobs_effects.inc"
 #undef TERRAZZO_EFFECT
     // --------------------------------------
     // -----End led effect enum macros-------

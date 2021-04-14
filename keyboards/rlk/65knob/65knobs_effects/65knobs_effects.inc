@@ -1,0 +1,7 @@
+//#include "65knobs_effects/lightning.h"
+#include "65knobs_effects/audrey.h"
+#include "65knobs_effects/stripes2.h"
+#include "65knobs_effects/candle.h"
+#include "65knobs_effects/stripes.h"
+#include "65knobs_effects/dino.h"
+#include "65knobs_effects/dot.h"
