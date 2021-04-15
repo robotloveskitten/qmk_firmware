@@ -19,7 +19,7 @@ TERRAZZO_EFFECT(STRIPES)
 #   ifdef TERRAZZO_EFFECT_IMPLS
 
 void STRIPES(uint8_t i, bool dir) {
-    uint8_t sweep[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    uint8_t sweep[] = {1, 1, 2, 3, 4, 4, 5, 6, 6, 7};
     uint8_t levels = 10;
 
     for (int y = 0; y < LED_MATRIX_ROWS; y++) {
