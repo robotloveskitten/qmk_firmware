@@ -31,7 +31,7 @@ const is31_led g_is31_leds[DRIVER_LED_TOTAL] = {
 #define TERRAZZO_EFFECT(name)
 #define TERRAZZO_EFFECT_IMPLS
 
-#include "terrazzo_effects/terrazzo_effects.inc"
+#include "65knobs_effects/65knobs_effects.inc"
 
 #undef TERRAZZO_EFFECT_IMPLS
 #undef TERRAZZO_EFFECT
@@ -103,7 +103,7 @@ void terrazzo_render(void) {
             case TERRAZZO_EFFECT_##name:                \
                 name(terrazzo_led_index, terrazzo_dir); \
                 break;
-        #include "terrazzo_effects/terrazzo_effects.inc"
+        #include "65knobs_effects/65knobs_effects.inc"
         #undef TERRAZZO_EFFECT
     }
 }
@@ -131,7 +131,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
             // Any keycode increments counter
             default:
                 terrazzo_scroll_pixel(1);
-                break;
+            break;
         }
     }
     return process_record_user(keycode, record);

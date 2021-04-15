@@ -1,7 +1,5 @@
 #pragma once
-
 #include "config_common.h"
-
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x524B
@@ -27,14 +25,13 @@
 
 #define ENCODERS_PAD_A { C6 }
 #define ENCODERS_PAD_B { D4 }
-#define TAP_CODE_DELAY 10
-// #define ENCODER_DIRECTION_FLIP
+#define ENCODER_DIRECTION_FLIP
 
 #define ENCODER_RESOLUTION 2
-#define BACKLIGHT_LEVELS 5
 
-/* Set 0 if debouncing isn't needed */
-#define DEBOUNCE 5
+#define TAP_CODE_DELAY 10
+
+#define BACKLIGHT_LEVELS 5
 
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
@@ -53,10 +50,11 @@
 
 /* Terrazzo animations */
 
+// #define DISABLE_TERRAZZO_EFFECT_LIGHTNING
+// #define DISABLE_TERRAZZO_EFFECT_AUDREY
+// #define DISABLE_TERRAZZO_EFFECT_CANDLE
 // #define DISABLE_TERRAZZO_EFFECT_STRIPES
 // #define DISABLE_TERRAZZO_EFFECT_DINO
-// #define DISABLE_TERRAZZO_EFFECT_OUTRUN
-// #define DISABLE_TERRAZZO_EFFECT_PAC_DUDE
-// #define DISABLE_TERRAZZO_EFFECT_HEART
-// #define DISABLE_TERRAZZO_EFFECT_WPM_CHART
 // #define DISABLE_TERRAZZO_EFFECT_DOT
+
+// #define DEBUG_MATRIX_SCAN_RATE

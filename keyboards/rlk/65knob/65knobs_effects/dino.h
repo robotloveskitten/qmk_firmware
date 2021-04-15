@@ -153,7 +153,6 @@ void DINO(uint8_t i, bool dir) {
         terrazzo_draw_at(0, 7, 7, 8, dino_frames[i % 2]);
     } else {
         terrazzo_draw_at(0, 7, 7, 8, dino_reverse[i % 2]);
-
     }
     terrazzo_draw_at(0, 0, 7, 6, dino_bg[i % 10]);
 }
